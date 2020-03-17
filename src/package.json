@@ -1,5 +1,5 @@
 {
-  "name": "@projektionisten/nativescript-localize",
+  "name": "nativescript-localize",
   "description": "Native internationalization plugin for NativeScript using native capabilities of each platform",
   "version": "4.2.4",
   "keywords": [
