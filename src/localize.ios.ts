@@ -25,16 +25,6 @@ export function androidLaunchEventLocalizationHandler() {
 }
 
 export function overrideLocale(locale: string): boolean {
-  const path = NSBundle.mainBundle.pathForResourceOfType(locale.substring(0, 2), "lproj");
-
-  if (!path) {
-    return false;
-  }
-
-  bundle = NSBundle.bundleWithPath(path);
-  NSUserDefaults.standardUserDefaults.setObjectForKey([locale], "AppleLanguages");
-  NSUserDefaults.standardUserDefaults.synchronize();
   setString("__app__language__", locale.substring(0, 2));
-
   return true;
 }
